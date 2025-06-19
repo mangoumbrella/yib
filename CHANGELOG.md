@@ -4,6 +4,10 @@
 
 Nothing noticeable unreleased.
 
+## v0.2.0
+
+Removed the false claim of supporting Python 3.9.
+
 ## v0.1.0
 
 Initial release:

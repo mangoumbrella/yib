@@ -20,6 +20,7 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: 3 :: Only",
   "Topic :: Utilities",
 ]
@@ -44,3 +45,8 @@ version-file = "src/yib/_version.py"
 template = '''
 version = "{version}"
 '''
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]

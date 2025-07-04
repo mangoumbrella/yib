@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- Added `warning` and `error` methods to `yconsole.Console`.
 
 ## v0.2.0
 

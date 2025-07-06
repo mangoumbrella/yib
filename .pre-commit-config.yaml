@@ -1,0 +1,10 @@
+repos:
+- repo: local
+  hooks:
+  - id: export-docs-requirements
+    name: Export docs requirements
+    language: system
+    entry: uv export --group docs --format requirements.txt --no-annotate --no-header --no-hashes --no-editable --no-emit-project -o docs/requirements.txt
+    pass_filenames: false
+    files: ^(pyproject.toml|uv.lock)$
+    verbose: true

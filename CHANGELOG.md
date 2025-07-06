@@ -4,6 +4,10 @@
 
 Nothing noticeable unreleased.
 
+## v0.4.0
+
+- Added documentation site [yib.readthedocs.io](https://yib.readthedocs.io).
+
 ## v0.3.0
 
 - Added `warning` and `error` methods to `yconsole.Console`.

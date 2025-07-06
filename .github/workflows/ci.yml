@@ -34,6 +34,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Build yib
-        run: uv sync --locked --dev
+        run: uv sync --locked --all-groups
       - name: Run pytest
         run: uv run pytest

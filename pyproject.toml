@@ -49,3 +49,9 @@ version = "{version}"
 dev = [
     "pytest>=8.4.1",
 ]
+docs = [
+  "sphinx>=8.2.3; python_version>='3.13'",
+  "sphinx_rtd_theme>=3.0.2; python_version>='3.13'",
+  "sphinx-notfound-page>=1.1.0; python_version>='3.13'",
+  "sphinx-autobuild>=2024.10.3; python_version>='3.13'",
+]

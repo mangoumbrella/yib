@@ -7,4 +7,4 @@ yib documentation
    :maxdepth: 1
    :caption: API References
 
-   yconsole
+   yib.yconsole

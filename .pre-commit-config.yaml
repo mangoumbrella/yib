@@ -8,3 +8,9 @@ repos:
     pass_filenames: false
     files: \.(toml|lock|yaml)$
     verbose: true
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.12.2
+  hooks:
+    - id: ruff-check
+      args: [ --fix ]
+    - id: ruff-format

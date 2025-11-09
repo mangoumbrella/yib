@@ -50,6 +50,7 @@ version = "{version}"
 dev = [
     "pytest>=8.4.1",
     "pre-commit>=4.2.0",
+    "uv>=0.9.8",
 ]
 docs = [
   "sphinx>=8.2.3; python_version>='3.13'",

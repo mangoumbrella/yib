@@ -28,7 +28,9 @@ class Console(rich.console.Console):
         soft_wrap: bool | None = None,
         new_line_start: bool = False,
     ) -> None: ...
-    def fatal(self, *args, **kwargs) -> None:
+    @overload
+    def fatal(self, *args, **kwargs) -> None: ...
+    def fatal(self, *args, **kwargs):
         """Print the message then exit with code 1."""
         self.print(*args, **kwargs)
         sys.exit(1)
@@ -52,7 +54,9 @@ class Console(rich.console.Console):
         soft_wrap: bool | None = None,
         new_line_start: bool = False,
     ) -> None: ...
-    def warning(self, *args, **kwargs) -> None:
+    @overload
+    def warning(self, *args, **kwargs) -> None: ...
+    def warning(self, *args, **kwargs):
         """Print the message prefixed a yellow ``WARNING:``."""
         self.print(*["[yellow]WARNING:[/yellow]", *args], **kwargs)
 
@@ -75,6 +79,8 @@ class Console(rich.console.Console):
         soft_wrap: bool | None = None,
         new_line_start: bool = False,
     ) -> None: ...
-    def error(self, *args, **kwargs) -> None:
+    @overload
+    def error(self, *args, **kwargs) -> None: ...
+    def error(self, *args, **kwargs):
         """Print the message prefixed a red ``ERROR:``."""
         self.print(*["[red]ERROR:[/red]", *args], **kwargs)
